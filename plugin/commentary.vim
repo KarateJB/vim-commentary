@@ -111,11 +111,11 @@ nnoremap <silent> <Plug>ChangeCommentary c:<C-U>call <SID>textobject(1)<CR>
 nmap <silent> <Plug>CommentaryUndo :echoerr "Change your <Plug>CommentaryUndo map to <Plug>Commentary<Plug>Commentary"<CR>
 
 if !hasmapto('<Plug>Commentary') || maparg('commentray','n') ==# ''
-  xmap <C-_>  <Plug>Commentary
-  nmap <C-_> <Plug>Commentary
-  omap <C-_> <Plug>Commentary
-  nmap <C-_><C-_> <Plug>CommentaryLine
-  nmap <C-_>u <Plug>Commentary<Plug>Commentary
+  xmap <leader>c <Plug>Commentary
+  nmap <leader>c <Plug>Commentary
+  omap <leader>c <Plug>Commentary
+  nmap <leader>cc <Plug>CommentaryLine
+  nmap <leader>u <Plug>Commentary<Plug>Commentary
 endif
 
 " vim:set et sw=2:
