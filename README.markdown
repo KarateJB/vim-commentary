@@ -34,6 +34,10 @@ Relax!  You just have to adjust `'commentstring'`:
 
     autocmd FileType apache setlocal commentstring=#\ %s
 
+> Remap keys not working?
+
+See the solution of issue: [custom keybindings don't override default keybindings #84](https://github.com/tpope/vim-commentary/issues/84#issuecomment-285878827).
+
 ## Self-Promotion
 
 Like commentary.vim? Follow the repository on
