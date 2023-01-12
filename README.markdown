@@ -1,5 +1,7 @@
 # commentary.vim
 
+> The repo modifies the default key mapping from `gc` to `\c`, `gcc` to `\cc` and `gcu` to `\u`.
+
 Comment stuff out.  Use `gcc` to comment out a line (takes a count),
 `gc` to comment out the target of a motion (for example, `gcap` to
 comment out a paragraph), `gc` in visual mode to comment out the selection,
@@ -32,7 +34,12 @@ support:
 
 Relax!  You just have to adjust `'commentstring'`:
 
-    autocmd FileType apache setlocal commentstring=#\ %s
+For example:
+
+```
+autocmd FileType apache setlocal commentstring=#\ %s
+autocmd FileType cs setlocal commentstring=\/\/\ %s
+```
 
 > Remap keys not working?
 
